@@ -9,12 +9,28 @@ export type info = {
   next_phase?: string;
 };
 
+export type listInfo = {
+  count?: number;
+  items?: Array<info>;
+};
+
 export const openInfo = async <info>(params?: any) => {
   try {
     const { data } = await Axios.get("http://743kj.com/what/the/fuck/api/openinfo", {
       params
     });
     return data.data as info
+  } catch (error) {
+    return error
+  }
+};
+
+export const datalist = async <listInfo>(params?: any) => {
+  try {
+    const { data } = await Axios.get("http://743kj.com/what/the/fuck/api/historyinfo", {
+      params
+    });
+    return data.data as listInfo
   } catch (error) {
     return error
   }

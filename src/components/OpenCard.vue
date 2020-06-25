@@ -4,11 +4,11 @@
       <div class="card-name">澳洲极速10</div>
       <div>
         <span>期号：</span>
-        <span>{{data.open_phase}}</span>
+        <span>{{ data.open_phase }}</span>
       </div>
       <div>
         开奖时间：
-        <span>{{data.open_time}}</span>
+        <span>{{ data.open_time }}</span>
       </div>
       <!-- <div>{{data.open_result}}</div> -->
       <n-parts type="pk" :data="iN" size="small"></n-parts>
@@ -20,15 +20,15 @@
       </div>
       <div>
         <span>下期期号：</span>
-        <span>{{data.next_phase}}</span>
+        <span>{{ data.next_phase }}</span>
       </div>
       <div>
         <span>下期开奖时间：</span>
-        <span>{{data.next_time}}</span>
+        <span>{{ data.next_time }}</span>
       </div>
       <div class="open-second">
         <span>距离开奖还有：</span>
-        <span>{{secondToDate(data.second).join(':')}}</span>
+        <span>{{ secondToDate(data.second).join(":") }}</span>
       </div>
     </div>
   </div>
@@ -46,13 +46,12 @@ import { isAnalyzingTrends } from "@/core/trends.ts";
 })
 export default class App extends Vue {
   // @Prop() private msg!: string;
+  tin = 0;
   private msg = "hello world";
   private data: info = {
     second: 0
   };
   get iN() {
-    // console.log(isLh(this.data.open_result?.split(",")));
-    // console.log(isBs(this.data.open_result?.split(",")));
     // console.log(isAnalyzingTrends([this.data.open_result?.split(",")], 1));
     return this.data.open_result?.split(",");
   }
@@ -87,8 +86,7 @@ export default class App extends Vue {
       this.data.second -= 1;
       return;
     }
-    this.getOpenInfo();
-    console.log("123123555");
+    window.location.reload();
   }
   @Emit()
   emitTodo(n: string) {

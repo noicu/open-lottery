@@ -14,7 +14,7 @@
           type="date"
           :disabledMethod="disabledDateMethod"
           transfer
-        ></vxe-input> -->
+        ></vxe-input>-->
       </template>
     </vxe-toolbar>
     <vxe-table
@@ -101,7 +101,7 @@ import { isAnalyzingTrends, getExtraColor } from "@/core/trends.ts";
 export default class App extends Vue {
   pi = 1;
   ps = 50;
-  @Watch("pi", { immediate: true, deep: true })
+  @Watch("pi")
   onChangePi(newVal: any, oldVal: any) {
     this.getData(true);
   }
@@ -144,6 +144,7 @@ export default class App extends Vue {
     return dateFormat("HH:MM:SS", new Date(str));
   }
   async getData(b?: boolean) {
+    console.log(b);
     historyinfo({
       pi: this.pi,
       ps: this.ps,

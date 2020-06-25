@@ -8,13 +8,13 @@
         <vxe-button @click="howlongago(2)">前天</vxe-button>
       </template>
       <template v-slot:tools>
-        <vxe-input
+        <!-- <vxe-input
           v-model="date"
           placeholder="日期类型"
           type="date"
           :disabledMethod="disabledDateMethod"
           transfer
-        ></vxe-input>
+        ></vxe-input> -->
       </template>
     </vxe-toolbar>
     <vxe-table
@@ -103,7 +103,7 @@ export default class App extends Vue {
   ps = 50;
   @Watch("pi", { immediate: true, deep: true })
   onChangePi(newVal: any, oldVal: any) {
-    this.getData();
+    this.getData(true);
   }
   date = dateFormat("YYYY-mm-dd", new Date());
   @Watch("date", { immediate: true, deep: true })
@@ -143,14 +143,18 @@ export default class App extends Vue {
   dateF(str: string) {
     return dateFormat("HH:MM:SS", new Date(str));
   }
-  async getData() {
+  async getData(b?: boolean) {
     historyinfo({
       pi: this.pi,
       ps: this.ps,
       start: this.date + " 00:00:00",
       end: this.date + " 23:59:59"
     }).then(data => {
-      this.tableData.push(...isAnalyzingTrends(data.items, 2));
+      if (b) {
+        this.tableData.push(...isAnalyzingTrends(data.items, 2));
+      } else {
+        this.tableData = isAnalyzingTrends(data.items, 2);
+      }
       // console.log(this.tableData);
     });
   }

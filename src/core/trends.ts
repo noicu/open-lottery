@@ -26,7 +26,7 @@ export const getExtraColor = (it: any) => {
   return '#636363'
 }
 
-let isBs = (s: number) => {
+const isBs = (s: number) => {
   switch (true) {
     case [3, 6, 9, 12, 15, 18, 21, 24].indexOf(s) !== -1:
       return '红';
@@ -38,16 +38,16 @@ let isBs = (s: number) => {
       return '黄';
   }
 };
-let isLh = (a: any) => {
-  let obj: any = {};
+const isLh = (a: any) => {
+  const obj: any = {};
   for (let i = 0; i < 5; i++) {
     obj[i + 1] = a[i] > a[9 - i] ? '龙' : '虎';
   }
   return obj;
 };
 
-let isQzh = (arr: any) => {
-  let obj: any = {};
+const isQzh = (arr: any) => {
+  const obj: any = {};
   arr.forEach(function (v: any, k: any) {
     if (obj[v]) {
       obj[v]++;
@@ -56,7 +56,7 @@ let isQzh = (arr: any) => {
     }
   });
   let n = 0;
-  let soa = arr.sort((a: any, b: any) => {
+  const soa = arr.sort((a: any, b: any) => {
     return a - b;
   });
   for (let j = 1; j <= soa.length - 1; j++) {
@@ -86,9 +86,9 @@ let isQzh = (arr: any) => {
 //   3:'ks',
 //   4:'pc',
 // }
-export let isAnalyzingTrends = (data: any, type: any) =>
+export const isAnalyzingTrends = (data: any, type: any) =>
   data.map((it: any) => {
-    let arr = it as Array<number> || [];
+    const arr = it as Array<number> || [];
     let sum = 0;
     switch (type) {
       case 4:
@@ -96,7 +96,7 @@ export let isAnalyzingTrends = (data: any, type: any) =>
         return {
           ...it,
           sum,
-          open_arr: arr,
+          openArr: arr,
           dx: sum <= 13 ? '小' : '大',
           ds: sum % 2 === 0 ? '双' : '单',
           bs: isBs(sum)
@@ -106,7 +106,7 @@ export let isAnalyzingTrends = (data: any, type: any) =>
         return {
           ...it,
           sum,
-          open_arr: arr,
+          openArr: arr,
           dx: sum <= 10 ? '小' : '大',
           ds: sum % 2 === 0 ? '双' : '单'
         };
@@ -115,7 +115,7 @@ export let isAnalyzingTrends = (data: any, type: any) =>
         return {
           ...it,
           sum,
-          open_arr: arr,
+          openArr: arr,
           dx: sum <= 11 ? '小' : '大',
           ds: sum % 2 === 0 ? '双' : '单',
           ...isLh(arr)
@@ -125,7 +125,7 @@ export let isAnalyzingTrends = (data: any, type: any) =>
         return {
           ...it,
           sum,
-          open_arr: arr,
+          openArr: arr,
           dx: sum <= 22 ? '小' : '大',
           ds: sum % 2 === 0 ? '双' : '单',
           lh: arr[0] > arr[4] ? '龙' : '虎',

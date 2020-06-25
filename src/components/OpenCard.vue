@@ -86,6 +86,7 @@ export default class App extends Vue {
       return;
     }
     this.getOpenInfo();
+    console.log("123123555");
   }
   @Emit()
   emitTodo(n: string) {
@@ -96,6 +97,12 @@ export default class App extends Vue {
       code: "azjs10"
     }).then(data => {
       this.data = data as info;
+      console.log(data);
+    });
+    historyinfo({
+      pi: 1,
+      ps: 10
+    }).then(data => {
       console.log(data);
     });
   }

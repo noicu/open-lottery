@@ -58,7 +58,6 @@ export default class App extends Vue {
   }
   disabledDateMethod(d: any) {
     const dd = d.date.getDate();
-    console.log(d)
     return d.date.getTime() > Date.now() - 8.64e6;
   }
   allAlign = null;
@@ -70,7 +69,6 @@ export default class App extends Vue {
     return data.open_result?.split(",");
   }
   howlongago(day: number) {
-    console.log(this.date);
     let dateTime = new Date();
     const dn = dateTime.setDate(dateTime.getDate() - day);
     dateTime = new Date(dn);
@@ -80,12 +78,11 @@ export default class App extends Vue {
   getData() {
     historyinfo({
       pi: 1,
-      ps: 10,
+      ps: 500,
       start: this.date + " 00:00:00",
       end: this.date + " 23:59:59"
     }).then(data => {
       this.tableData = data as listInfo;
-      console.log(data);
     });
   }
 }

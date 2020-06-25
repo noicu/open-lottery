@@ -51,6 +51,8 @@ export default class App extends Vue {
     second: 0
   };
   get iN() {
+    // console.log(isLh(this.data.open_result?.split(",")));
+    // console.log(isBs(this.data.open_result?.split(",")));
     // console.log(isAnalyzingTrends([this.data.open_result?.split(",")], 1));
     return this.data.open_result?.split(",");
   }

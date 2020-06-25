@@ -23,9 +23,13 @@
       show-overflow
       highlight-hover-row
       :align="allAlign"
-      :data="tableData.items"
+      :data="tableData"
     >
-      <vxe-table-column field="open_time" title="时间"></vxe-table-column>
+      <vxe-table-column field="open_time" title="时间" width="100">
+        <template v-slot="{ row }">
+          <div>{{dateF(row.open_time) }}</div>
+        </template>
+      </vxe-table-column>
       <vxe-table-column field="open_phase" title="期号"></vxe-table-column>
       <vxe-table-column title="开奖号">
         <template v-slot="{ row }">
@@ -34,7 +38,50 @@
           </div>
         </template>
       </vxe-table-column>
+      <vxe-table-column field="open_phase" title="一" width="48">
+        <template v-slot="{ row }">
+          <div :style="getColor(row[1])">{{row[1]}}</div>
+        </template>
+      </vxe-table-column>
+      <vxe-table-column field="open_phase" title="二" width="48">
+        <template v-slot="{ row }">
+          <div :style="getColor(row[2])">{{row[2]}}</div>
+        </template>
+      </vxe-table-column>
+      <vxe-table-column field="open_phase" title="三" width="48">
+        <template v-slot="{ row }">
+          <div :style="getColor(row[3])">{{row[3]}}</div>
+        </template>
+      </vxe-table-column>
+      <vxe-table-column field="open_phase" title="四" width="48">
+        <template v-slot="{ row }">
+          <div :style="getColor(row[4])">{{row[4]}}</div>
+        </template>
+      </vxe-table-column>
+      <vxe-table-column field="open_phase" title="五" width="48">
+        <template v-slot="{ row }">
+          <div :style="getColor(row[5])">{{row[5]}}</div>
+        </template>
+      </vxe-table-column>
+      <vxe-table-column field="open_phase" title="和" width="48">
+        <template v-slot="{ row }">
+          <div :style="getColor(row.sum)">{{row.sum}}</div>
+        </template>
+      </vxe-table-column>
+      <vxe-table-column field="open_phase" title="大小" width="70">
+        <template v-slot="{ row }">
+          <div :style="getColor(row.dx)">{{row.dx}}</div>
+        </template>
+      </vxe-table-column>
+      <vxe-table-column field="open_phase" title="单双" width="70">
+        <template v-slot="{ row }">
+          <div :style="getColor(row.ds)">{{row.ds}}</div>
+        </template>
+      </vxe-table-column>
     </vxe-table>
+    <div class="bbt">
+      <button @click="pi+=1">加载更多</button>
+    </div>
   </div>
 </template>
 <script lang="ts">
@@ -43,6 +90,7 @@ import NParts from "@/components/NParts.vue";
 import { dateFormat } from "@/utils/date";
 import { Component, Prop, Vue, Emit, Watch } from "vue-property-decorator";
 import { listInfo, info, historyinfo } from "@/api/open";
+import { isAnalyzingTrends, getExtraColor } from "@/core/trends.ts";
 
 @Component({
   components: {
@@ -51,6 +99,12 @@ import { listInfo, info, historyinfo } from "@/api/open";
   }
 })
 export default class App extends Vue {
+  pi = 1;
+  ps = 50;
+  @Watch("pi", { immediate: true, deep: true })
+  onChangePi(newVal: any, oldVal: any) {
+    this.getData();
+  }
   date = dateFormat("YYYY-mm-dd", new Date());
   @Watch("date", { immediate: true, deep: true })
   onChangeDate(newVal: any, oldVal: any) {
@@ -60,13 +114,24 @@ export default class App extends Vue {
     const dd = d.date.getDate();
     return d.date.getTime() > Date.now() - 8.64e6;
   }
-  allAlign = null;
-  private tableData: listInfo = {};
+  allAlign = "center";
+  private tableData: Array<any> = [];
   created() {
-    this.getData();
+    // this.getData();
   }
   iN(data: info) {
     return data.open_result?.split(",");
+  }
+  getColor(i: any) {
+    return {
+      background: getExtraColor(i),
+      color: "#fff",
+      textAlign: "center",
+      borderRadius: "50%",
+      width: "25px",
+      height: "25px",
+      display: "inline-block"
+    };
   }
   howlongago(day: number) {
     let dateTime = new Date();
@@ -75,16 +140,24 @@ export default class App extends Vue {
 
     this.date = dateFormat("YYYY-mm-dd", new Date(dateTime));
   }
-  getData() {
+  dateF(str: string) {
+    return dateFormat("HH:MM:SS", new Date(str));
+  }
+  async getData() {
     historyinfo({
-      pi: 1,
-      ps: 500,
+      pi: this.pi,
+      ps: this.ps,
       start: this.date + " 00:00:00",
       end: this.date + " 23:59:59"
     }).then(data => {
-      this.tableData = data as listInfo;
+      this.tableData.push(...isAnalyzingTrends(data.items, 2));
+      // console.log(this.tableData);
     });
   }
 }
 </script>
-<style lang="stylus" scoped></style>
+<style lang="stylus" scoped>
+.bbt
+  text-align center
+  padding 20px
+</style>

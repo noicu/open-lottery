@@ -1,3 +1,6 @@
+// https://www.caipiaokong.com/index.htm
+//https://match.lottery.sina.com.cn/lotto/pc_zst/index?lottoType=hlj61&actionType=chzs&sqi=2019088&eqi=2020036
+//https://www.jianshu.com/p/d8ed3aa76e9b
 export const getExtraColor = (it: any) => {
   if (['和', '豹', '蓝'].includes(it)) {
     return '#0CA0EC'
@@ -26,22 +29,22 @@ export const getExtraColor = (it: any) => {
   return '#636363'
 }
 
-const isBs = (s: number) => {
+const isBs = (n: number) => {
   switch (true) {
-    case [3, 6, 9, 12, 15, 18, 21, 24].indexOf(s) !== -1:
+    case [3, 6, 9, 12, 15, 18, 21, 24].indexOf(n) !== -1:
       return '红';
-    case [1, 4, 7, 10, 16, 19, 22, 25].indexOf(s) !== -1:
+    case [1, 4, 7, 10, 16, 19, 22, 25].indexOf(n) !== -1:
       return '绿';
-    case [2, 5, 8, 11, 17, 20, 23, 26].indexOf(s) !== -1:
+    case [2, 5, 8, 11, 17, 20, 23, 26].indexOf(n) !== -1:
       return '蓝';
-    case [0, 13, 14, 27].indexOf(s) !== -1:
+    case [0, 13, 14, 27].indexOf(n) !== -1:
       return '黄';
   }
 };
 const isLh = (a: any) => {
   const obj: any = {};
   for (let i = 0; i < 5; i++) {
-    obj[i + 1] = a[i] > a[9 - i] ? '龙' : '虎';
+    obj[i + 1] = Number(a[i]) > Number(a[9 - i]) ? '龙' : '虎';
   }
   return obj;
 };
@@ -88,7 +91,8 @@ const isQzh = (arr: any) => {
 // }
 export const isAnalyzingTrends = (data: any, type: any) =>
   data.map((it: any) => {
-    const arr = it as Array<number> || [];
+    if (!it || !it.open_result) return;
+    const arr = it?.open_result?.split(",");
     let sum = 0;
     switch (type) {
       case 4:

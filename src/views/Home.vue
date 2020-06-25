@@ -63,17 +63,17 @@
           <div :style="getColor(row[5])">{{row[5]}}</div>
         </template>
       </vxe-table-column>
-      <vxe-table-column field="open_phase" title="和" width="48">
+      <vxe-table-column field="open_phase" title="冠亚和" width="70">
         <template v-slot="{ row }">
           <div :style="getColor(row.sum)">{{row.sum}}</div>
         </template>
       </vxe-table-column>
-      <vxe-table-column field="open_phase" title="大小" width="70">
+      <vxe-table-column field="open_phase" title="冠亚大小" width="100">
         <template v-slot="{ row }">
           <div :style="getColor(row.dx)">{{row.dx}}</div>
         </template>
       </vxe-table-column>
-      <vxe-table-column field="open_phase" title="单双" width="70">
+      <vxe-table-column field="open_phase" title="冠亚单双" width="100">
         <template v-slot="{ row }">
           <div :style="getColor(row.ds)">{{row.ds}}</div>
         </template>

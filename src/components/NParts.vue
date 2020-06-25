@@ -11,7 +11,10 @@
           ['parts-'+size]:true
         }"
         :style="nstyle(n)"
-      >{{ Number(n) }}</div>
+      >
+        <span>{{ Number(n) }}</span>
+        <span v-if="i != isDate.length-1" style="opacity: 0;position: absolute;">,</span>
+      </div>
       <div
         v-else
         :key="i"

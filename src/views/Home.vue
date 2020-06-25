@@ -7,40 +7,50 @@
       show-overflow
       highlight-hover-row
       :align="allAlign"
-      :data="tableData"
+      :data="tableData.items"
     >
-      <vxe-table-column field="name" title="时间"></vxe-table-column>
-      <vxe-table-column field="sex" title="期号"></vxe-table-column>
-      <vxe-table-column field="name" title="开奖号"></vxe-table-column>
+      <vxe-table-column field="open_time" title="时间"></vxe-table-column>
+      <vxe-table-column field="open_phase" title="期号"></vxe-table-column>
+      <vxe-table-column title="开奖号">
+        <template v-slot="{ row }">
+          <div>
+            <n-parts type="pk" :data="iN(row)" size="small"></n-parts>
+          </div>
+        </template>
+      </vxe-table-column>
     </vxe-table>
   </div>
 </template>
+<script lang="ts">
+import OpenCard from "@/components/OpenCard.vue";
+import NParts from "@/components/NParts.vue";
+import { Component, Prop, Vue, Emit } from "vue-property-decorator";
+import { listInfo,info, historyinfo } from "@/api/open";
 
-<script>
-import OpenCard from "@/components/OpenCard";
-export default {
+@Component({
   components: {
-    OpenCard
-  },
-  data: () => ({
-    allAlign: null,
-    tableData: []
-  }),
-  created() {
-    const list = [];
-    for (let index = 0; index < 5; index++) {
-      list.push({
-        name: "test" + index,
-        role: "developer",
-        sex: "Man",
-        date: "2019-05-01",
-        time: 1556677810888 + index * 500,
-        region: "ShenZhen",
-        address: "address abc" + index
-      });
-    }
-    this.tableData = list;
+    OpenCard,
+    NParts
   }
-};
+})
+export default class App extends Vue {
+  allAlign = null;
+  private tableData: listInfo = {};
+  created() {
+    this.getData();
+  }
+  iN(data:info) {
+    return data.open_result?.split(",");
+  }
+  getData() {
+    historyinfo({
+      pi: 1,
+      ps: 10
+    }).then(data => {
+      this.tableData = data as listInfo;
+      console.log(data);
+    });
+  }
+}
 </script>
 <style lang="stylus" scoped></style>

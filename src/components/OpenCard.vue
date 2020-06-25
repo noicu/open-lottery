@@ -36,7 +36,7 @@
 
 <script lang="ts">
 import { Component, Prop, Vue, Emit } from "vue-property-decorator";
-import { openInfo, info, datalist } from "@/api/open";
+import { openInfo, info, historyinfo } from "@/api/open";
 import NParts from "@/components/NParts.vue";
 import { isAnalyzingTrends } from "@/core/trends.ts";
 @Component({
@@ -86,7 +86,6 @@ export default class App extends Vue {
       return;
     }
     this.getOpenInfo();
-    console.log("123123555");
   }
   @Emit()
   emitTodo(n: string) {
@@ -97,12 +96,6 @@ export default class App extends Vue {
       code: "azjs10"
     }).then(data => {
       this.data = data as info;
-      console.log(data);
-    });
-    datalist({
-      pi: 1,
-      ps: 10
-    }).then(data => {
       console.log(data);
     });
   }

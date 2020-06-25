@@ -25,7 +25,7 @@ export const openInfo = async <info>(params?: any) => {
   }
 };
 
-export const datalist = async <listInfo>(params?: any) => {
+export const historyinfo = async <listInfo>(params?: any) => {
   try {
     const { data } = await Axios.get("http://743kj.com/what/the/fuck/api/historyinfo", {
       params

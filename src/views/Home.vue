@@ -1,11 +1,11 @@
 <template>
   <div class="home">
-    <open-card></open-card>
     <vxe-toolbar>
       <template v-slot:buttons>
-        <vxe-button @click="howlongago(0)">今天</vxe-button>
-        <vxe-button @click="howlongago(1)">昨天</vxe-button>
-        <vxe-button @click="howlongago(2)">前天</vxe-button>
+        <vxe-button @click="howlongago(0)">Today</vxe-button>
+        <vxe-button @click="howlongago(1)">Yesterday</vxe-button>
+        <vxe-button @click="howlongago(2)">Before Yesterday</vxe-button>
+        <span class="" style="margin-left: 20px;color:#964b90;">CHECK LOTTERY RESULTS ONLINE.</span>
       </template>
       <template v-slot:tools>
         <!-- <vxe-input
@@ -25,67 +25,66 @@
       :align="allAlign"
       :data="tableData"
     >
-      <vxe-table-column field="open_time" title="时间" width="100">
+      <vxe-table-column field="open_time" title="Date" width="100">
         <template v-slot="{ row }">
           <div>{{dateF(row.open_time) }}</div>
         </template>
       </vxe-table-column>
-      <vxe-table-column field="open_phase" title="期号"></vxe-table-column>
-      <vxe-table-column title="开奖号">
+      <vxe-table-column field="open_phase" title="Issue NO." width="180"></vxe-table-column>
+      <vxe-table-column title="Winning Numbers">
         <template v-slot="{ row }">
           <div>
             <n-parts type="pk" :data="iN(row)" size="small"></n-parts>
           </div>
         </template>
       </vxe-table-column>
-      <vxe-table-column field="open_phase" title="一" width="48">
+      <vxe-table-column field="open_phase" title="No.1" width="60">
         <template v-slot="{ row }">
           <div :style="getColor(row[1])">{{row[1]}}</div>
         </template>
       </vxe-table-column>
-      <vxe-table-column field="open_phase" title="二" width="48">
+      <vxe-table-column field="open_phase" title="No.2" width="60">
         <template v-slot="{ row }">
           <div :style="getColor(row[2])">{{row[2]}}</div>
         </template>
       </vxe-table-column>
-      <vxe-table-column field="open_phase" title="三" width="48">
+      <vxe-table-column field="open_phase" title="No.3" width="60">
         <template v-slot="{ row }">
           <div :style="getColor(row[3])">{{row[3]}}</div>
         </template>
       </vxe-table-column>
-      <vxe-table-column field="open_phase" title="四" width="48">
+      <vxe-table-column field="open_phase" title="No.4" width="60">
         <template v-slot="{ row }">
           <div :style="getColor(row[4])">{{row[4]}}</div>
         </template>
       </vxe-table-column>
-      <vxe-table-column field="open_phase" title="五" width="48">
+      <vxe-table-column field="open_phase" title="No.5" width="60">
         <template v-slot="{ row }">
           <div :style="getColor(row[5])">{{row[5]}}</div>
         </template>
       </vxe-table-column>
-      <vxe-table-column field="open_phase" title="冠亚和" width="70">
+      <vxe-table-column field="open_phase" title="Sum" width="70">
         <template v-slot="{ row }">
           <div :style="getColor(row.sum)">{{row.sum}}</div>
         </template>
       </vxe-table-column>
-      <vxe-table-column field="open_phase" title="冠亚大小" width="100">
+      <vxe-table-column field="open_phase" title="Sum" width="100">
         <template v-slot="{ row }">
           <div :style="getColor(row.dx)">{{row.dx}}</div>
         </template>
       </vxe-table-column>
-      <vxe-table-column field="open_phase" title="冠亚单双" width="100">
+      <vxe-table-column field="open_phase" title="Sum" width="100">
         <template v-slot="{ row }">
           <div :style="getColor(row.ds)">{{row.ds}}</div>
         </template>
       </vxe-table-column>
     </vxe-table>
     <div class="bbt">
-      <button @click="pi+=1">加载更多</button>
+      <button @click="pi+=1">Loading</button>
     </div>
   </div>
 </template>
 <script lang="ts">
-import OpenCard from "@/components/OpenCard.vue";
 import NParts from "@/components/NParts.vue";
 import { dateFormat } from "@/utils/date";
 import { Component, Prop, Vue, Emit, Watch } from "vue-property-decorator";
@@ -94,7 +93,6 @@ import { isAnalyzingTrends, getExtraColor } from "@/core/trends.ts";
 
 @Component({
   components: {
-    OpenCard,
     NParts
   }
 })

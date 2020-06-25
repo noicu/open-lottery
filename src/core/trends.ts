@@ -5,7 +5,7 @@ export const getExtraColor = (it: any) => {
   if (['和', '豹', '蓝'].includes(it)) {
     return '#0CA0EC'
   }
-  if (['单', '小', '虎', '半'].includes(it)) {
+  if (['单', '小', '虎', '半','D','S.'].includes(it)) {
     return '#AABB92'
   }
   if (['绿'].includes(it)) {
@@ -14,7 +14,7 @@ export const getExtraColor = (it: any) => {
   if (['红'].includes(it)) {
     return '#ed3737'
   }
-  if (['大', '双', '龙', '对'].includes(it)) {
+  if (['大', '双', '龙', '对','B.','S'].includes(it)) {
     return '#00BCBD'
   }
   if (typeof it === 'number') {
@@ -44,7 +44,7 @@ const isBs = (n: number) => {
 const isLh = (a: any) => {
   const obj: any = {};
   for (let i = 0; i < 5; i++) {
-    obj[i + 1] = Number(a[i]) > Number(a[9 - i]) ? '龙' : '虎';
+    obj[i + 1] = Number(a[i]) > Number(a[9 - i]) ? 'D' : 'T';
   }
   return obj;
 };
@@ -120,8 +120,8 @@ export const isAnalyzingTrends = (data: any, type: any) =>
           ...it,
           sum,
           openArr: arr,
-          dx: sum <= 11 ? '小' : '大',
-          ds: sum % 2 === 0 ? '双' : '单',
+          dx: sum <= 11 ? 'S.' : 'B.',
+          ds: sum % 2 === 0 ? 'D' : 'S',
           ...isLh(arr)
         };
       case 1:

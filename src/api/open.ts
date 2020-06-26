@@ -1,5 +1,5 @@
 import Axios from 'axios';
-
+import host from '@/api/host'
 export type info = {
   open_phase?: string;
   open_time?: string;
@@ -16,7 +16,7 @@ export type listInfo = {
 
 export const openInfo = async <info>(params?: any) => {
   try {
-    const { data } = await Axios.get("http://743kj.com/what/the/fuck/api/openinfo", {
+    const { data } = await Axios.get(host + "/what/the/fuck/api/openinfo", {
       params
     });
     return data.data as info
@@ -27,7 +27,7 @@ export const openInfo = async <info>(params?: any) => {
 
 export const historyinfo = async <listInfo>(params?: any) => {
   try {
-    const { data } = await Axios.get("http://743kj.com/what/the/fuck/api/historyinfo", {
+    const { data } = await Axios.get(host + "/what/the/fuck/api/historyinfo", {
       params
     });
     return data.data as listInfo

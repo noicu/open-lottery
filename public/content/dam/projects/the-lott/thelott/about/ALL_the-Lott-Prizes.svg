@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M24,43.5 C34.7695526,43.5 43.5,34.7695526 43.5,24 C43.5,13.2304474 34.7695526,4.5 24,4.5 C13.2304474,4.5 4.5,13.2304474 4.5,24 C4.5,34.7695526 13.2304474,43.5 24,43.5 Z M24,48 C10.745166,48 0,37.254834 0,24 C0,10.745166 10.745166,0 24,0 C37.254834,0 48,10.745166 48,24 C48,37.254834 37.254834,48 24,48 Z M27,9 L21,9 L21,12.15 C17.58,12.846 15,15.876 15,19.5 C15,23.634 18.366,27 22.5,27 L25.5,27 C26.328,27 27,27.672 27,28.5 C27,29.328 26.328,30 25.5,30 L15,30 L15,36 L21,36 L21,39 L27,39 L27,35.85 C30.42,35.154 33,32.124 33,28.5 C33,24.366 29.637,21 25.5,21 L22.5,21 C21.675,21 21,20.328 21,19.5 C21,18.672 21.675,18 22.5,18 L33,18 L33,12 L27,12 L27,9 Z" id="path-1"></path>
+    </defs>
+    <g id="ABOUT-US--GC" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="DSK--mySomething-something--GC" transform="translate(-1192.000000, -1020.000000)">
+            <g id="CONTENT" transform="translate(360.000000, 192.000000)">
+                <g id="POINTS" transform="translate(0.000000, 694.000000)">
+                    <g id="WINNERS-(4)" transform="translate(832.000000, 134.000000)">
+                        <g id="Icon">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use fill="#118ACB" fill-rule="nonzero" xlink:href="#path-1"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

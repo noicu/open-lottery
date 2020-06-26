@@ -1,0 +1,1964 @@
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.3.1
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+
+/* 
+    Put your component sass in here.
+ */
+
+.winners-story {
+    min-width: 288px;
+    max-width: 552px;
+    margin: 1rem 0;
+}
+
+@media screen and (max-width: 47.9375em) {
+    .winners-story {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+}
+
+.winners-story .winners-story-header {
+    height: 176px;
+    width: 100%;
+}
+
+.winners-story .winners-story-content {
+    height: 200px;
+    background: linear-gradient(135deg, #EDA747 0%, #E1723D 18%, #DC5540 34%, #CF4E69 55%, #AA4789 100%);
+    padding: 1rem;
+}
+
+@media screen and (max-width: 47.9375em) {
+    .winners-story .winners-story-content {
+        height: auto;
+    }
+}
+
+.winners-story .winners-story-content p {
+    color: #ffffff;
+}
+
+.winners-story .winners-story-content a {
+    margin: 0;
+    text-decoration: none;
+    height: 34px;
+    font-weight: 900;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.winners-story .winners-story-content a.button {
+    line-height: 5px;
+}
+
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.3.1
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+
+/* 
+    Put your component sass in here.
+ */
+
+.winner-statistics {
+    min-width: 288px;
+    max-width: 552px;
+    max-height: 376px;
+    margin: 1rem 0;
+}
+
+@media screen and (max-width: 47.9375em) {
+    .winner-statistics {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+}
+
+.winner-statistics .winner-statistics-header {
+    background: linear-gradient(135deg, #4A59A2 0%, #406AAE 18%, #3073B5 31%, #3277B6 43%, #4193BC 56%, #60B9AB 100%);
+}
+
+.winner-statistics .winner-statistics-header span {
+    font-size: 1.5rem;
+    line-height: 1.8125rem;
+    font-weight: 900;
+    color: #ffffff;
+    margin: 1.0625rem 0;
+}
+
+.winner-statistics .winner-statistics-content {
+    background-color: #FAFAFA;
+}
+
+.winner-statistics .winner-statistics-content span {
+    margin-top: 0.5rem;
+    color: #444444;
+}
+
+.winner-statistics .winner-statistics-content hr {
+    color: #E8E8E8;
+    margin-top: 0.1875rem;
+    margin-bottom: 0;
+}
+
+.winner-statistics .winner-statistics-content h6 {
+    font-weight: 500;
+}
+
+.winner-statistics .winner-statistics-content .big {
+    font-size: 2.25rem;
+    font-weight: 900;
+    line-height: 2.6875rem;
+    display: block;
+    color: #000000;
+}
+
+.winner-statistics .winner-statistics-content a {
+    margin-top: 1rem;
+    margin-bottom: 1.1875rem;
+    text-decoration: none;
+    height: 34px;
+    font-weight: 900;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+}
+
+.winner-statistics .winner-statistics-content a.button {
+    line-height: 5px;
+}
+
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.3.1
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+
+.why-join .cert {
+    background-image: url("components/content/why-join/clientlibs/assets/ico--whyjoin-cert.svg");
+}
+
+.why-join .tix {
+    background-image: url("components/content/why-join/clientlibs/assets/ico--prizeprotection.svg");
+}
+
+.why-join .call {
+    background-image: url("components/content/why-join/clientlibs/assets/ico--whyjoin-call.svg");
+}
+
+.why-join .stores {
+    background-image: url("components/content/why-join/clientlibs/assets/ico--whyjoin-stores.svg");
+}
+
+.why-join .join-button-container {
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.why-join .join-button-container .button-box {
+    width: 100%;
+}
+
+.why-join .join-button-container .button-box a {
+    padding: 0.75rem 0;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #FFFFFF;
+    background-color: #6C4796;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    border-radius: 100px;
+}
+
+.why-join .promo-box {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    background-color: #FAFAFA;
+    border: 1px solid #E8E8E8;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 64em) {
+    .why-join .promo-box .icon {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 63.9375em) {
+    .why-join .promo-box .icon {
+        float: left;
+        width: 4rem;
+        height: auto;
+        min-height: 128px;
+    }
+}
+
+@media screen and (max-width: 47.9375em) {
+    .why-join .promo-box .icon {
+        min-height: 152px;
+    }
+}
+
+@media screen and (max-width: 39.9375em) {
+    .why-join .promo-box .icon {
+        min-height: 96px;
+    }
+}
+
+.why-join .promo-box .icon .icon-viewport {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 75%;
+}
+
+@media screen and (min-width: 64em) {
+    .why-join .promo-box .icon .icon-viewport {
+        height: 4rem;
+        width: 4rem;
+        margin: 1rem auto;
+    }
+}
+
+@media screen and (max-width: 63.9375em) {
+    .why-join .promo-box .icon .icon-viewport {
+        height: 2rem;
+        width: 2rem;
+        margin: 1rem;
+    }
+}
+
+.why-join .promo-box .content {
+    text-align: center;
+    padding: 0 1rem 1.5rem 1rem;
+}
+
+@media screen and (min-width: 64em) {
+    .why-join .promo-box .content {
+        min-height: 168px;
+    }
+}
+
+@media screen and (max-width: 63.9375em) {
+    .why-join .promo-box .content {
+        padding: 1rem 1rem 1rem 0;
+        text-align: left;
+        min-height: 128px;
+    }
+}
+
+@media screen and (max-width: 47.9375em) {
+    .why-join .promo-box .content {
+        min-height: 152px;
+    }
+}
+
+@media screen and (max-width: 39.9375em) {
+    .why-join .promo-box .content {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        min-height: 96px;
+    }
+}
+
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.3.1
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+
+/* 
+    Put your component sass in here.
+ */
+
+.underconstruction {
+    text-align: center;
+    padding-top: 24px;
+}
+
+@media print,
+screen and (min-width: 40em) {
+    .underconstruction {
+        margin-top: 2rem;
+    }
+}
+
+.underconstruction .full-width {
+    max-width: 100%;
+}
+
+.underconstruction .green-tick {
+    background: url("components/content/underconstruction/clientlibs/assets/ico--tick.svg") no-repeat;
+    background-size: contain;
+    height: 48px;
+    width: 48px;
+    position: relative;
+    top: -2px;
+    margin: auto;
+    margin-bottom: 0.75rem;
+    text-align: center;
+}
+
+.underconstruction .input-box {
+    background-color: #FFFFFF;
+    border: 1px solid #C8C8C8;
+    box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 11px;
+}
+
+.underconstruction .notify-button {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 13px;
+    padding: 11px;
+    width: 100%;
+}
+
+@media print,
+screen and (min-width: 40em) {
+    .underconstruction #signup-form {
+        margin: auto;
+        max-width: 288px;
+    }
+}
+
+.underconstruction #signup-thanks p {
+    margin-bottom: 0;
+}
+
+.underconstruction .thanks-text {
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+    margin-bottom: 4px;
+}
+
+.underconstruction .underconstruction-animation {
+    background: url("components/content/underconstruction/clientlibs/assets/BetaAnimation@2x.gif") no-repeat;
+    background-size: contain;
+    margin: 1rem auto;
+    text-align: center;
+    min-width: 288px;
+    min-height: 160px;
+    max-width: 288px;
+    max-height: 130px;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+@media print,
+screen and (min-width: 40em) {
+    .underconstruction .underconstruction-animation {
+        margin: 3rem auto;
+    }
+}
+
+.underconstruction .underconstruction-message {
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+.underconstruction .undercontruction-signup {
+    padding-bottom: 4rem;
+    text-align: center;
+    width: 100%;
+}
+
+.underconstruction .undercontruction-signup form {
+    text-align: left;
+}
+
+.underconstruction #name-help {
+    margin-top: -11px;
+    margin-bottom: .5rem;
+}
+
+.underconstruction #email-help {
+    margin-top: -11px;
+    margin-bottom: .5rem;
+}
+
+.underconstruction h2 {
+    color: #000;
+    margin-bottom: 0;
+    padding-left: .5rem !important;
+    padding-right: .5rem !important;
+}
+
+.underconstruction label {
+    color: #444444;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.underconstruction p {
+    margin-bottom: 2rem;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.3.1
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.3.1
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+
+.articles-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    -ms-grid-rows: 216px 216px 216px 216px 216px 216px 216px 216px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 216px);
+    padding: 0.5rem;
+}
+
+.articles-list>.real-winners-article {
+    margin: 0.5rem;
+}
+
+.articles-list>.real-winners-article:nth-child(1) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+    -ms-grid-column-span: 1;
+    -ms-grid-row-span: 2;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.articles-list>.real-winners-article:nth-child(2) {
+    -ms-grid-column: 2;
+    -ms-grid-row: 1;
+    -ms-grid-column-span: 1;
+    -ms-grid-row-span: 1;
+}
+
+.articles-list>.real-winners-article:nth-child(3) {
+    -ms-grid-column: 2;
+    -ms-grid-row: 2;
+    -ms-grid-column-span: 1;
+    -ms-grid-row-span: 1;
+}
+
+.articles-list>.real-winners-article:nth-child(4) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 3;
+    -ms-grid-column-span: 1;
+    -ms-grid-row-span: 1;
+}
+
+.articles-list>.real-winners-article:nth-child(5) {
+    -ms-grid-column: 2;
+    -ms-grid-row: 3;
+    -ms-grid-column-span: 1;
+    -ms-grid-row-span: 2;
+    grid-column-start: 2;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.articles-list>.real-winners-article:nth-child(6) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 4;
+    -ms-grid-column-span: 1;
+    -ms-grid-row-span: 1;
+}
+
+.articles-list>.real-winners-article:nth-child(7) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 5;
+    -ms-grid-column-span: 1;
+    -ms-grid-row-span: 1;
+}
+
+.articles-list>.real-winners-article:nth-child(8) {
+    -ms-grid-column: 2;
+    -ms-grid-row: 5;
+    -ms-grid-column-span: 1;
+    -ms-grid-row-span: 1;
+}
+
+.articles-list>.real-winners-article:nth-child(9) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 6;
+    -ms-grid-column-span: 1;
+    -ms-grid-row-span: 1;
+}
+
+.articles-list>.real-winners-article:nth-child(10) {
+    -ms-grid-column: 2;
+    -ms-grid-row: 6;
+    -ms-grid-column-span: 1;
+    -ms-grid-row-span: 1;
+}
+
+.articles-list>.real-winners-article:nth-child(11) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 7;
+    -ms-grid-column-span: 1;
+    -ms-grid-row-span: 1;
+}
+
+.articles-list>.real-winners-article:nth-child(12) {
+    -ms-grid-column: 2;
+    -ms-grid-row: 7;
+    -ms-grid-column-span: 1;
+    -ms-grid-row-span: 1;
+}
+
+@media screen and (max-width: 39.9375em) {
+    .articles-list {
+        /* Not even a grid, mate. */
+        display: block;
+    }
+}
+
+.real-winners-home .articles-list {
+    margin-left: 0;
+}
+
+.real-winners-home .state-none .brand-circle-logo {
+    opacity: 0;
+}
+
+.real-winners-home .feature-article>.real-winners-article {
+    height: 400px;
+}
+
+@media screen and (max-width: 39.9375em) {
+    .real-winners-home .feature-article>.real-winners-article {
+        height: 214px;
+    }
+}
+
+.real-winners-home .feature-article>.real-winners-article>.real-winners-link-container>.overlay {
+    padding: 1.5rem 2rem;
+}
+
+@media screen and (max-width: 39.9375em) {
+    .real-winners-home .feature-article>.real-winners-article>.real-winners-link-container>.overlay {
+        padding: 1rem;
+    }
+}
+
+.real-winners-home .feature-article>.real-winners-article>.real-winners-link-container>.overlay>.brand-circle-logo {
+    position: static;
+}
+
+.real-winners-home .feature-article>.real-winners-article>.real-winners-link-container>.overlay>.details {
+    margin-left: 1rem;
+}
+
+.real-winners-home .feature-article>.real-winners-article>.real-winners-link-container>.overlay>.details>.when-posted {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+}
+
+@media screen and (max-width: 39.9375em) {
+    .real-winners-home .feature-article>.real-winners-article>.real-winners-link-container>.overlay>.details>.when-posted {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+    }
+}
+
+.real-winners-home .feature-article>.real-winners-article>.real-winners-link-container>.overlay>.details>.headline {
+    font-family: museo-slab, museo-sans;
+    font-weight: 900;
+    font-size: 1.875rem;
+    line-height: 2.375rem;
+}
+
+@media screen and (max-width: 39.9375em) {
+    .real-winners-home .feature-article>.real-winners-article>.real-winners-link-container>.overlay>.details>.headline {
+        font-size: 1.125rem;
+        line-height: 1.625rem;
+    }
+}
+
+.real-winners-home .real-winners-article {
+    height: calc(100% - 1rem);
+}
+
+@media screen and (max-width: 39.9375em) {
+    .real-winners-home .real-winners-article {
+        height: 200px;
+    }
+}
+
+.real-winners-home .real-winners-article>.real-winners-link-container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 100%;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    background-color: transparent;
+    background-blend-mode: darken;
+    transition: background-color 0.5s ease-in-out;
+    background-position: center;
+}
+
+.real-winners-home .real-winners-article>.real-winners-link-container:hover,
+.real-winners-home .real-winners-article>.real-winners-link-container:focus {
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.real-winners-home .real-winners-article>.real-winners-link-container:hover>.overlay,
+.real-winners-home .real-winners-article>.real-winners-link-container:focus>.overlay {
+    background-color: rgba(108, 71, 150, 0.8);
+    padding-bottom: 2rem;
+}
+
+.real-winners-home .real-winners-article>.real-winners-link-container>.overlay {
+    position: relative;
+    align-self: flex-end;
+    background-color: rgba(68, 68, 68, 0.7);
+    padding: 1rem;
+    color: #FFF;
+    font-family: museo-sans;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    transition: background-color 0.15s ease-in-out, padding 0.25s ease-in-out;
+}
+
+@media screen and (max-width: 39.9375em) {
+    .real-winners-home .real-winners-article>.real-winners-link-container>.overlay {
+        padding: 1rem;
+    }
+}
+
+.real-winners-home .real-winners-article>.real-winners-link-container>.overlay>.brand-circle-logo {
+    position: absolute;
+    top: -32px;
+    right: 1rem;
+    height: 60px;
+    width: 60px;
+    min-height: 60px;
+    min-width: 60px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 39.9375em) {
+    .real-winners-home .real-winners-article>.real-winners-link-container>.overlay>.brand-circle-logo {
+        top: -24px;
+        right: 0.75rem;
+        height: 44px;
+        width: 44px;
+        min-height: 44px;
+        min-width: 44px;
+    }
+}
+
+.real-winners-home .real-winners-article>.real-winners-link-container>.overlay>.details {
+    flex: 1 1 auto;
+}
+
+.real-winners-home .real-winners-article>.real-winners-link-container>.overlay>.details>.when-posted {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    margin-bottom: 0.5rem;
+    margin-right: 60px;
+}
+
+@media screen and (max-width: 39.9375em) {
+    .real-winners-home .real-winners-article>.real-winners-link-container>.overlay>.details>.when-posted {
+        margin-right: 44px;
+    }
+}
+
+.real-winners-home .real-winners-article>.real-winners-link-container>.overlay>.details>.headline {
+    font-family: museo-slab, museo-sans;
+    font-weight: 900;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+}
+
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.3.1
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+
+/* 
+    Put your component sass in here.
+ */
+
+.product-navigation {
+    margin: 0 -2rem;
+}
+
+@media screen and (max-width: 47.9375em) {
+    .product-navigation {
+        margin: 0 -0.5rem;
+    }
+}
+
+.product-navigation .header {
+    height: 148px;
+    position: relative;
+    margin-bottom: 16px;
+    background-size: auto 148px;
+}
+
+@media screen and (max-width: 39.9375em) {
+    .product-navigation .header {
+        height: 162px;
+        background-repeat: no-repeat;
+    }
+}
+
+.product-navigation .header .overlay {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+}
+
+.product-navigation .header .overlay span {
+    display: inline-block;
+    position: relative;
+}
+
+.product-navigation .header .overlay span span.caret {
+    display: inline-block;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #ffffff;
+}
+
+.product-navigation .header .overlay span a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 900;
+    height: 48px;
+    line-height: 48px;
+    padding: 14px 32px 15px 32px;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 47.9375em) {
+    .product-navigation .header .overlay span a {
+        padding: 15px 16px 16px 16px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 39.9375em) {
+    .product-navigation .header .overlay {
+        padding: 12px 16px;
+    }
+}
+
+.product-navigation .header .overlay select {
+    margin: 0px;
+    height: 38px;
+    color: #000000;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    border: 1px solid #C8C8C8;
+    border-radius: 3px;
+}
+
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.3.1
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+
+/* 
+    Put your component sass in here.
+ */
+
+.paragraph {
+    flex: 1;
+}
+
+.paragraph.smoke {
+    background-color: #FAFAFA;
+    box-shadow: inset 0 -1px 0 0 #E8E8E8;
+}
+
+.paragraph.p-align-left {
+    text-align: left;
+}
+
+.paragraph.p-align-right {
+    text-align: right;
+}
+
+.paragraph.p-align-center {
+    text-align: center;
+}
+
+.paragraph.p-align-justify {
+    text-align: justify;
+}
+
+.paragraph.p-small,
+.paragraph.p-small p {
+    font-size: .875rem;
+    line-height: 1.3125rem;
+}
+
+@media screen and (max-width: 47.9375em) {
+    .paragraph.p-small,
+    .paragraph.p-small p {
+        font-size: .75rem;
+        line-height: 1.125rem;
+    }
+}
+
+.paragraph.p-normal,
+.paragraph.p-normal p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+@media screen and (max-width: 47.9375em) {
+    .paragraph.p-normal,
+    .paragraph.p-normal p {
+        font-size: .875rem;
+        line-height: 1.3125rem;
+    }
+}
+
+.paragraph.p-tiny,
+.paragraph.p-tiny p {
+    font-size: .75rem;
+    line-height: 1.125rem;
+}
+
+@media screen and (max-width: 47.9375em) {
+    .paragraph.p-tiny,
+    .paragraph.p-tiny p {
+        font-size: .625rem;
+        line-height: 0.9375rem;
+    }
+}
+
+.paragraph.clean {
+    background-color: #ffffff;
+    box-shadow: none;
+}
+
+.paragraph.columns {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.3.1
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+
+.page #divPlayMenu,
+.page #divResultMenu {
+    border-width: 0px 0px 1px 1px;
+    border-color: #E8E8E8;
+    border-style: solid;
+}
+
+.page #divPlayMenu.nav-menu>a,
+.page #divResultMenu.nav-menu>a {
+    display: none;
+    border-width: 1px 1px 0 0;
+}
+
+.page .menu-checkout a.create-syndicate,
+.page .nav-menu .create-syndicate {
+    background-image: url("components/content/navigation/clientlibs/assets/img-playnav-syndimate@2x.png");
+}
+
+@media screen and (max-width: 47.9375em) {
+    .page .menu-checkout a.create-syndicate,
+    .page .nav-menu .create-syndicate {
+        background-image: url("components/content/navigation/clientlibs/assets/img-playnav-syndimate-mob@2x.png");
+    }
+}
+
+.page.state-qld #divPlayMenu.nav-menu>a.state-qld,
+.page.state-qld #divResultMenu.nav-menu>a.state-qld {
+    display: inline;
+}
+
+.page.state-nsw #divPlayMenu.nav-menu>a.state-nsw,
+.page.state-nsw #divResultMenu.nav-menu>a.state-nsw {
+    display: inline;
+}
+
+.page.state-act #divPlayMenu.nav-menu>a.state-act,
+.page.state-act #divResultMenu.nav-menu>a.state-act {
+    display: inline;
+}
+
+.page.state-sa #divPlayMenu.nav-menu>a.state-sa,
+.page.state-sa #divResultMenu.nav-menu>a.state-sa {
+    display: inline;
+}
+
+.page.state-vic #divPlayMenu.nav-menu>a.state-vic,
+.page.state-vic #divResultMenu.nav-menu>a.state-vic {
+    display: inline;
+}
+
+.page.state-tas #divPlayMenu.nav-menu>a.state-tas,
+.page.state-tas #divResultMenu.nav-menu>a.state-tas {
+    display: inline;
+}
+
+.page.state-nt #divPlayMenu.nav-menu>a.state-nt,
+.page.state-nt #divResultMenu.nav-menu>a.state-nt {
+    display: inline;
+}
+
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.3.1
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+
+.lotterywest-app-banner {
+    background: #FF8100;
+    color: #ffffff;
+    padding: 1.5rem 0;
+}
+
+.lotterywest-app-banner .lotterywest-app-content {
+    min-width: 18rem;
+    max-width: 18rem;
+    margin: auto;
+}
+
+@media print,
+screen and (min-width: 48em) {
+    .lotterywest-app-banner {
+        padding: 2rem;
+    }
+    .lotterywest-app-banner .lotterywest-app-content {
+        max-width: 45.25rem;
+    }
+}
+
+.lotterywest-app-banner .lotterywest-description {
+    display: inline-block;
+    max-width: 12.6875rem;
+}
+
+@media print,
+screen and (min-width: 48em) {
+    .lotterywest-app-banner .lotterywest-description {
+        max-width: 19rem;
+    }
+}
+
+.lotterywest-app-banner .lotterywest-details a {
+    margin-right: 1rem;
+}
+
+.lotterywest-app-banner p {
+    margin: 0;
+}
+
+.lotterywest-app-banner img {
+    vertical-align: top;
+    width: 4rem;
+    height: 4rem;
+}
+
+.lotterywest-app-banner a.button {
+    background-color: rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+    margin-top: 1.5rem;
+    margin-bottom: 0rem;
+}
+
+@media print,
+screen and (min-width: 48em) {
+    .lotterywest-app-banner a.button {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.lotterywest-app-banner .row {
+    margin: 0;
+}
+
+.lotterywest-app-banner .columns {
+    padding: 0;
+    margin: 0;
+}
+
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.3.1
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+
+section.heading .navigation-link {
+    font-size: 1rem;
+    line-height: 2rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-right: 2rem;
+}
+
+@media screen and (max-width: 47.9375em) {
+    section.heading .navigation-link {
+        padding-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 39.9375em) {
+    section.heading .navigation-link {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 39.9375em) {
+    section.heading .navigation-link {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+    }
+}
+
+section.heading .navigation-link .link-text-large {
+    display: block;
+}
+
+@media screen and (max-width: 39.9375em) {
+    section.heading .navigation-link .link-text-large {
+        display: none;
+    }
+}
+
+section.heading .navigation-link .link-text-small {
+    display: none;
+}
+
+@media screen and (max-width: 39.9375em) {
+    section.heading .navigation-link .link-text-small {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 21.5625em) {
+    section.heading .navigation-link .link-text-small {
+        display: none;
+    }
+}
+
+section.heading .navigation-link .link-text-super-small {
+    display: none;
+}
+
+@media screen and (max-width: 21.5625em) {
+    section.heading .navigation-link .link-text-super-small {
+        display: block;
+    }
+}
+
+section.heading .smoke {
+    background-color: #FAFAFA;
+    box-shadow: inset 0 -1px 0 0 #E8E8E8;
+}
+
+section.heading .clean {
+    background-color: #ffffff;
+    box-shadow: none;
+}
+
+section.heading .columns {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+section.heading .align-left {
+    text-align: left;
+}
+
+section.heading .align-center {
+    text-align: center;
+}
+
+section.heading .align-right {
+    text-align: right;
+}
+
+@media screen and (min-width: 48em) {
+    section.heading>.row {
+        margin-left: -2rem;
+        margin-right: -2rem;
+    }
+}
+
+@media screen and (max-width: 47.9375em) {
+    section.heading>.row {
+        margin-left: -0.5rem;
+        margin-right: -0.5rem;
+    }
+}
+
+section.heading h1,
+section.heading h2,
+section.heading h3,
+section.heading h4,
+section.heading h5,
+section.heading h6 {
+    padding: 1rem 2rem;
+    margin-bottom: 0px;
+    color: #000;
+}
+
+@media screen and (max-width: 47.9375em) {
+    section.heading h1,
+    section.heading h2,
+    section.heading h3,
+    section.heading h4,
+    section.heading h5,
+    section.heading h6 {
+        padding: 1rem;
+    }
+}
+
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.3.1
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+
+.callout-notification .callout-notification-component-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 47.9375em) {
+    .callout-notification .callout-notification-component-header {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.callout-notification .callout-notification-component-header .callout-notification-header-title {
+    flex-shrink: 0;
+    font-size: 1.875rem;
+    line-height: 2.375rem;
+    font-weight: 900;
+    color: #000000;
+    padding-right: 1rem;
+}
+
+@media screen and (max-width: 47.9375em) {
+    .callout-notification .callout-notification-component-header .callout-notification-header-title {
+        font-size: 1.5rem;
+        line-height: 1.875rem;
+        flex-shrink: unset;
+        align-self: baseline;
+        padding-right: 0.5rem;
+    }
+}
+
+.callout-notification .callout-notification-component-header .callout-notification-header-line {
+    flex-grow: 3;
+}
+
+.callout-notification .callout-notification-component-header .callout-notification-header-line hr {
+    height: 1px;
+    color: #E8E8E8;
+    background-color: #E8E8E8;
+    border: none;
+    margin: 0rem;
+}
+
+@media screen and (max-width: 39.9375em) {
+    .callout-notification .callout-notification-component-header .callout-notification-header-line {
+        min-width: 1rem;
+    }
+}
+
+.callout-notification .callout-notification-promo-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+
+@media screen and (min-width: 40em) and (max-width: 47.9375em) {
+    .callout-notification .callout-notification-promo-boxes {
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+}
+
+@media screen and (max-width: 39.9375em) {
+    .callout-notification .callout-notification-promo-boxes {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+}
+
+.callout-notification .callout-notification-promo-boxes .callout-notification-promo-box {
+    flex: 1 0 15%;
+    width: 15%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    background-color: #FAFAFA;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1.5rem;
+}
+
+@media screen and (max-width: 63.9375em) {
+    .callout-notification .callout-notification-promo-boxes .callout-notification-promo-box {
+        flex: 1 0 35%;
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 47.9375em) {
+    .callout-notification .callout-notification-promo-boxes .callout-notification-promo-box {
+        margin-bottom: 1rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 39.9375em) {
+    .callout-notification .callout-notification-promo-boxes .callout-notification-promo-box {
+        flex: 1 0 90%;
+        width: 90%;
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+}
+
+.callout-notification .callout-notification-promo-boxes .callout-notification-promo-box .callout-notification-icon-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.callout-notification .callout-notification-promo-boxes .callout-notification-promo-box .callout-notification-icon-header .callout-notification-icon {
+    flex: 0 0 auto;
+}
+
+@media screen and (min-width: 64em) {
+    .callout-notification .callout-notification-promo-boxes .callout-notification-promo-box .callout-notification-icon-header .callout-notification-icon {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 63.9375em) {
+    .callout-notification .callout-notification-promo-boxes .callout-notification-promo-box .callout-notification-icon-header .callout-notification-icon {
+        width: 3rem;
+        height: auto;
+        margin-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 47.9375em) {
+    .callout-notification .callout-notification-promo-boxes .callout-notification-promo-box .callout-notification-icon-header .callout-notification-icon {
+        width: 2rem;
+        margin-right: 0.5rem;
+    }
+}
+
+.callout-notification .callout-notification-promo-boxes .callout-notification-promo-box .callout-notification-icon-header .callout-notification-icon .callout-notification-icon-viewport {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+}
+
+@media screen and (min-width: 48em) {
+    .callout-notification .callout-notification-promo-boxes .callout-notification-promo-box .callout-notification-icon-header .callout-notification-icon .callout-notification-icon-viewport {
+        height: 3rem;
+        width: 3rem;
+        margin: 0rem auto 0rem;
+    }
+}
+
+@media screen and (max-width: 47.9375em) {
+    .callout-notification .callout-notification-promo-boxes .callout-notification-promo-box .callout-notification-icon-header .callout-notification-icon .callout-notification-icon-viewport {
+        height: 2rem;
+        width: 2rem;
+    }
+}
+
+.callout-notification .callout-notification-promo-boxes .callout-notification-promo-box .callout-notification-icon-header .callout-notification-header {
+    flex: 0 1 auto;
+    align-self: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 1.875rem;
+    color: #000000;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+}
+
+@media screen and (max-width: 63.9375em) {
+    .callout-notification .callout-notification-promo-boxes .callout-notification-promo-box .callout-notification-icon-header .callout-notification-header {
+        margin: 0rem;
+    }
+}
+
+@media screen and (max-width: 47.9375em) {
+    .callout-notification .callout-notification-promo-boxes .callout-notification-promo-box .callout-notification-icon-header .callout-notification-header {
+        font-size: 1.125rem;
+        line-height: 1.625rem;
+    }
+}
+
+.callout-notification .callout-notification-promo-boxes .callout-notification-promo-box .callout-notification-content {
+    text-align: center;
+    padding: 0rem;
+}
+
+@media screen and (max-width: 47.9375em) {
+    .callout-notification .callout-notification-promo-boxes .callout-notification-promo-box .callout-notification-content {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+    }
+}
+
+.callout-notification .callout-notification-promo-boxes .callout-notification-promo-box .callout-notification-button-container {
+    margin: 1rem auto 0rem;
+    text-align: center;
+}
+
+.callout-notification .callout-notification-promo-boxes .callout-notification-promo-box .callout-notification-button-container .callout-notification-button {
+    font-size: 0.875rem;
+    font-weight: 900;
+    line-height: normal;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0rem;
+    padding: 0.5rem 1rem;
+    -webkit-appearance: none;
+    border: 1px solid transparent;
+    border-radius: 2rem;
+    transition: background-color 0.25s ease-out, color 0.25s ease-out;
+    text-align: center;
+    cursor: pointer;
+    background-color: #6C4796;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    min-width: 11.25rem;
+}
+
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.3.1
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+
+/* 
+    Put your component sass in here.
+ */
+
+.app-splash-banner {
+    background: url("components/content/app-splash-banner/clientlibs/assets/applanding-intro-BG.png") no-repeat center;
+    background-attachment: fixed;
+    background-size: auto 100%;
+    padding: 1.5rem 1rem;
+}
+
+@media print,
+screen and (min-width: 48em) {
+    .app-splash-banner {
+        padding: 4rem;
+        padding-bottom: 2rem;
+    }
+}
+
+.app-splash-banner .splash-container.row {
+    display: flex;
+    max-width: 40rem;
+    margin: auto;
+}
+
+.app-splash-banner .splash-container.row .splash-text-container {
+    max-width: 288px;
+    margin: auto;
+}
+
+@media print,
+screen and (min-width: 48em) {
+    .app-splash-banner .splash-container.row .splash-text-container {
+        margin: initial;
+        max-width: none;
+        padding-top: 1rem;
+    }
+}
+
+.app-splash-banner .splash-container.row .splash-text-container .splash-main {
+    min-width: 232px;
+    max-width: 232px;
+}
+
+@media print,
+screen and (min-width: 48em) {
+    .app-splash-banner .splash-container.row .splash-text-container .splash-main {
+        max-width: 288px;
+    }
+}
+
+.app-splash-banner .splash-container.row .splash-text-container .splash-main h1 {
+    color: #6C4796;
+    margin-bottom: .75rem;
+}
+
+@media print,
+screen and (min-width: 48em) {
+    .app-splash-banner .splash-container.row .splash-text-container .splash-main h1 {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.app-splash-banner .splash-container.row .splash-text-container .splash-main .splash-description {
+    color: #000000;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 1.5rem;
+}
+
+@media print,
+screen and (min-width: 48em) {
+    .app-splash-banner .splash-container.row .splash-text-container .splash-main .splash-description {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 3rem;
+    }
+}
+
+.app-splash-banner .splash-container.row .splash-text-container a {
+    display: inline-block;
+    height: 49px;
+    width: 136px;
+}
+
+.app-splash-banner .splash-container.row .splash-text-container a:first-child {
+    margin-right: .7rem;
+}
+
+.app-splash-banner .splash-container.row .splash-text-container .app-store-icon-container {
+    margin: auto;
+}
+
+.app-splash-banner .splash-container.row .splash-text-container .app-store-icon {
+    height: 49px;
+    width: 136px;
+}
+
+.app-splash-banner .splash-container.row .splash-image-container {
+    min-width: 220px;
+}
+
+.app-splash-banner .splash-container.row .splash-image-container .splash-image {
+    height: 300px;
+}
+
+.app-splash-banner .splash-container.row .app-icon {
+    margin-right: 1rem;
+    border-radius: 20%;
+    height: 40px;
+    width: 40px;
+}
+
+@media print,
+screen and (min-width: 48em) {
+    .app-splash-banner .splash-container.row .app-icon {
+        height: 48px;
+        width: 48px;
+    }
+}
+
+.app-splash-banner .row {
+    margin: 0;
+}
+
+.app-splash-banner .columns {
+    display: inline-block;
+    padding: 0;
+}
+
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.3.1
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+
+/* 
+    Put your component sass in here.
+ */
+
+.app-reviews {
+    background-color: #118ACB;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 1rem 3rem 1rem;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+@media print,
+screen and (min-width: 40em) {
+    .app-reviews {
+        padding: 2rem 2rem 3rem 2rem;
+    }
+}
+
+@media print,
+screen and (min-width: 48em) {
+    .app-reviews {
+        padding: 3rem 2rem 4rem 2rem;
+    }
+}
+
+.app-reviews .app-review-heading {
+    margin-bottom: 2rem;
+}
+
+.app-reviews .app-review-carousel {
+    position: relative;
+    margin-bottom: 1rem;
+    min-height: 120px;
+    transition: all .75s ease;
+    max-width: 704px;
+    min-width: 288px;
+    margin: auto;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.app-reviews .app-review-carousel .carousel-container {
+    position: absolute;
+    width: 100%;
+    transition: all .75s ease;
+}
+
+.app-reviews .app-review-carousel .carousel-container .carousel-content {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    white-space: normal;
+    margin-right: -4px;
+}
+
+.app-reviews .app-review-carousel .carousel-container .carousel-content .review-star {
+    display: inline;
+    margin: 0 2px;
+    min-height: 1rem;
+    min-width: 1rem;
+}
+
+.app-reviews .app-review-carousel .carousel-container .carousel-content .review-text {
+    font-style: italic;
+}
+
+.app-reviews .app-review-carousel .carousel-container .carousel-content .review-user {
+    font-weight: 900;
+}
+
+.app-reviews .app-review-carousel .carousel-container .carousel-content .review-user .review-user-icon {
+    margin-right: 4px;
+}
+
+.app-reviews .app-review-carousel .carousel-container.slide {
+    transform: translateX(-100%);
+}
+
+.app-reviews .carousel-controls {
+    margin-top: 1rem;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.app-reviews .carousel-controls input[type='radio'] {
+    margin: 0;
+    display: none;
+}
+
+.app-reviews .carousel-controls label {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 0 4px;
+    border: 1px solid #FFFFFF;
+}
+
+.app-reviews .carousel-controls input[type="radio"]:checked+label {
+    background-color: #fff;
+}
+
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.3.1
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+
+.app-features {
+    padding-bottom: 0;
+    padding-top: 2rem;
+}
+
+@media print,
+screen and (min-width: 48em) {
+    .app-features {
+        padding-bottom: 4rem;
+        padding-top: 3rem;
+    }
+}
+
+.app-features .app-features-container {
+    margin: auto;
+    max-width: 19rem;
+}
+
+@media print,
+screen and (min-width: 40em) {
+    .app-features .app-features-container {
+        max-width: 21.5rem;
+    }
+}
+
+@media print,
+screen and (min-width: 48em) {
+    .app-features .app-features-container {
+        max-width: 44rem;
+    }
+}
+
+.app-features .app-features-container h2 {
+    color: #000000;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+@media print,
+screen and (min-width: 48em) {
+    .app-features .app-features-container h2 {
+        text-align: left;
+    }
+}
+
+@media print,
+screen and (min-width: 48em) {
+    .app-features .app-features-container .feature-list {
+        padding-left: 2rem;
+    }
+}
+
+.app-features .app-features-container .image-container {
+    text-align: center;
+}
+
+.app-features .app-features-container .image-container img {
+    width: 19rem;
+    margin: auto;
+}
+
+.app-features .app-features-container .featureItem img {
+    margin-right: .5rem;
+    margin-bottom: 1rem;
+    vertical-align: top;
+}
+
+.app-features .app-features-container .featureItem p {
+    display: inline-block;
+    max-width: 260px;
+}
+
+@media print,
+screen and (min-width: 40em) {
+    .app-features .app-features-container .featureItem p {
+        max-width: 300px;
+    }
+}
+
+@media print,
+screen and (min-width: 48em) {
+    .app-features .app-features-container .featureItem p {
+        max-width: 350px;
+    }
+}
+
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.3.1
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+
+.app-display {
+    padding-top: 1.5rem;
+}
+
+@media print,
+screen and (max-width: 23em) {
+    .app-display {
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+}
+
+@media print,
+screen and (min-width: 64em) {
+    .app-display {
+        padding: 2rem 2rem 0rem 2rem;
+    }
+}
+
+.app-display .app-display-container {
+    margin: auto;
+    max-width: 21.4375rem;
+}
+
+@media print,
+screen and (min-width: 48em) {
+    .app-display .app-display-container {
+        max-width: 44rem;
+    }
+}
+
+@media print,
+screen and (min-width: 64em) {
+    .app-display .app-display-container {
+        max-width: 71rem;
+    }
+}
+
+.app-display .app-display-container .app-container {
+    margin-bottom: 1rem;
+}
+
+@media print,
+screen and (min-width: 64em) {
+    .app-display .app-display-container .app-container {
+        margin-bottom: 0;
+    }
+}
+
+.app-display .app-display-container .app-container .image-container {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.app-display .app-display-container .app-container .image-container img {
+    max-width: 3rem;
+    display: inline-block;
+}
+
+.app-display .app-display-container .app-container .app-details {
+    display: inline-block;
+    margin-left: 1rem;
+    vertical-align: top;
+    max-width: 17rem;
+}
+
+@media print,
+screen and (max-width: 23em) {
+    .app-display .app-display-container .app-container .app-details {
+        margin-left: .5rem;
+        max-width: 15.2rem;
+    }
+}
+
+@media print,
+screen and (min-width: 48em) {
+    .app-display .app-display-container .app-container .app-details {
+        max-width: 39rem;
+    }
+}
+
+@media print,
+screen and (min-width: 64em) {
+    .app-display .app-display-container .app-container .app-details {
+        max-width: 25.5rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.app-display .app-display-container .app-container .app-details .app-display-title {
+    color: #000000;
+    font-weight: 900;
+}
+
+@media print,
+screen and (min-width: 64em) {
+    .app-display .app-display-container .columns {
+        margin: auto;
+    }
+}
+
+.app-display .columns {
+    margin: 0;
+    padding: 0;
+}
+
+.app-display .row {
+    margin: 0;
+    padding: 0;
+}
+
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.3.1
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+
+/* 
+    Put your component sass in here.
+ */
+
+.app-android-install {
+    background-color: #78B82A;
+    padding: 3rem 3rem 4rem 3rem;
+    display: none;
+}
+
+@media screen and (max-width: 47.9375em) {
+    .app-android-install {
+        padding: 2rem 1rem 3rem 1rem;
+    }
+}
+
+.app-android-install h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 1.875rem;
+    line-height: 2.375rem;
+    margin-bottom: 1rem;
+}
+
+.app-android-install h2 i {
+    margin-right: 0.75rem;
+}
+
+@media screen and (max-width: 47.9375em) {
+    .app-android-install h2 {
+        font-size: 1.5rem;
+        line-height: 1.875rem;
+    }
+}
+
+.app-android-install p {
+    color: #fff;
+    max-width: 695px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.app-android-install div.vid {
+    margin: 2rem auto;
+    padding: 0 1rem;
+    height: 225px;
+    width: 400px;
+    padding: 0 1rem;
+}
+
+@media screen and (max-width: 39.9375em) {
+    .app-android-install div.vid {
+        margin: 1.5rem auto;
+        height: 149px;
+        width: 265px;
+    }
+}
+
+.app-android-install div.vid>div {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("components/content/app-android-install/clientlibs/assets/img--videoprev.png");
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.25),
+only screen and (min--moz-device-pixel-ratio: 1.25),
+only screen and (-o-min-device-pixel-ratio: 1.25 / 1),
+only screen and (min-device-pixel-ratio: 1.25),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 1.25dppx) {
+    .app-android-install div.vid>div {
+        background-image: url("components/content/app-android-install/clientlibs/assets/img--videoprev@2x.png");
+    }
+}
+
+.app-android-install a.button {
+    display: table;
+    -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+    margin: 0 auto;
+    padding: 0.625rem 2.5rem;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 900;
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.app-android-install a.button:hover {
+    background-color: rgba(255, 255, 255, 0.45);
+}
+
+.app-android-install a.button:active {
+    background-color: rgba(255, 255, 255, 0.8);
+}

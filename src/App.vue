@@ -3,6 +3,7 @@
     <div class="head">
       <img width="216px" src="./assets/logo--dsktp-thelott-australias@2x.png" />
       <svg
+        style="margin-left: 15px;"
         width="91px"
         height="32px"
         viewBox="0 0 91 32"
@@ -60,7 +61,7 @@
         <router-link to="/">
           <span class="nav-but">Home</span>
         </router-link>
-        <a href="https://www.thelott.com/about">
+        <a href="./about.html">
           <span class="nav-but">About</span>
         </a>
       </div>
@@ -87,7 +88,6 @@ export default class App extends Vue {
 </script>
 
 <style lang="stylus" scoped>
-
 #app
   font-family Avenir, Helvetica, Arial, sans-serif
   -webkit-font-smoothing antialiased

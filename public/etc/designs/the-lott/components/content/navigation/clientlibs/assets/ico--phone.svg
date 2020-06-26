@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>ico--phone</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="btn--call" transform="translate(-17.000000, -15.000000)" fill="#FFFFFF">
+            <g id="ico--phone--16solid" transform="translate(16.000000, 14.000000)">
+                <path d="M10.0588235,15 L14.1764706,15 C14.6318824,15 15,14.6318824 15,14.1764706 L15,10.8823529 C15,10.4269412 14.6318824,10.0588235 14.1764706,10.0588235 L10.8823529,10.0588235 C10.4269412,10.0588235 10.0588235,10.4269412 10.0588235,10.8823529 L10.0588235,11.7058824 C6.76470588,11.7058824 4.346,9.18423529 4.29411765,5.94117647 L5.11764706,5.94117647 C5.57305882,5.94117647 5.94117647,5.57305882 5.94117647,5.11764706 L5.94117647,1.82352941 C5.94117647,1.36811765 5.57305882,1 5.11764706,1 L1.82352941,1 C1.36894118,1 1,1.36811765 1,1.82352941 L1,5.94117647 C1,10.9441176 5.05588235,15 10.0588235,15 Z" id="icon"></path>
+            </g>
+        </g>
+    </g>
+</svg>
